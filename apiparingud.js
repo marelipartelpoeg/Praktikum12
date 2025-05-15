@@ -131,8 +131,8 @@ async function listiraamatud() {
 
     resultElement.innerHTML = ""
     for (var raamat of responseData.raamatud){
-        resultElement.innerHTML += '<a href="http://localhost:5000/raamatud/'+raamat+'"  download="'+raamat+'.txt" >' +raamat+".txt</a> " +
-                '<a href="#" onclick="deleteObject(\'http://localhost:5000/raamatud/'+raamat+'\')" > [kustuta]</a>' +
+        resultElement.innerHTML += '<a href="https://praktikum12-h0ahawarf0f0cted.northeurope-01.azurewebsites.net/raamatud/'+raamat+'"  download="'+raamat+'.txt" >' +raamat+".txt</a> " +
+                '<a href="#" onclick="deleteObject(\'https://praktikum12-h0ahawarf0f0cted.northeurope-01.azurewebsites.net/raamatud/'+raamat+'\')" > [kustuta]</a>' +
                 "<br />";
 }
 }
