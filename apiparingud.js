@@ -81,7 +81,7 @@ async function handleFormSubmit(event) {
 
     if (form.id === "eraldiotsinguform") {
         const raamatId = document.getElementById("raamat").value;
-        form.action = `http://localhost:5001/raamatu_otsing/${encodeURIComponent(raamatId)}`;
+        form.action = `https://praktikum12-otsing-cwcabphfgqbkc7de.northeurope-01.azurewebsites.net/raamatu_otsing/${encodeURIComponent(raamatId)}`;
     }
 
     // This takes the API URL from the form's `action` attribute.
@@ -126,7 +126,7 @@ function handleResponse(form, responseData) {
 }
 
 async function listiraamatud() {
-    const responseData = await getDataAsJson("http://localhost:5000/raamatud/");
+    const responseData = await getDataAsJson("https://praktikum12-h0ahawarf0f0cted.northeurope-01.azurewebsites.net/raamatud/");
     const resultElement = document.getElementById("raamatud_result");
 
     resultElement.innerHTML = ""
